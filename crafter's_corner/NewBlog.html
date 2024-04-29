@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Blog Post</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="blogpagedesign.css">
+    <style>
+        /* CSS for adjusting the size of input fields and textarea */
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+        input[type="submit"] {
+            background-color: #d762ee; /* Green background */
+            color: rgb(9, 9, 9);
+            padding: 12px 20px; /* Padding */
+            border: none; /* No border */
+            border-radius: 4px; /* Rounded corners */
+            cursor: pointer;
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        /* Hover effect for the submit button */
+        input[type="submit"]:hover {
+            background-color: #45a049; /* Darker green background */
+        }
+    </style>
+    <!-- Include any necessary CSS files or styles here -->
+
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>New Blog Post</h1>
+        </div>
+        <!-- Form for users to write a new blog post -->
+        <form action="submit_blog.php" method="post">
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title" required><br><br>
+            
+            <label for="content">Content:</label><br>
+            <textarea id="content" name="content" rows="10" required></textarea><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- Include any necessary JavaScript code here if needed -->
+</body>
+</html>

@@ -1,0 +1,99 @@
+
+.streak-card span,
+.streak-card .streak-label {
+    caret-color: transparent;
+}
+
+
+   
+   .streak-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Distribute content with space on sides */
+    align-items: center;
+    width: 100vw; /* Full viewport width */
+    height: 450px; /* Fixed height */
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    padding: 0; /* Remove any potential padding */
+    box-sizing: border-box; /* Ensure padding is included in width */
+    overflow: hidden; /* Hide overflowing content */
+  }
+  
+  .streak-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1; /* Distribute remaining space equally */
+    padding: 0 30px; /* Added padding for internal spacing */
+  }
+  
+
+  
+  .circle { /* Styles for current streak circle (unchanged) */
+    width: 280px; /* Adjust width and height as needed */
+    height: 280px;
+    border-radius: 50%;
+    border: 8px solid royalblue; /* Blue border for current streak */
+    background-color: black; /* Inner circle black for current streak */
+    display: flex;
+    border-top:none;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative; /* Needed for fire positioning */
+    font-size: 70px; /* Adjusted font size for larger circle */
+    text-align: center;
+    line-height: 270px; /* Center the streak value text */
+    color:orange; /* Text color white for current streak */
+  }
+  
+  .fire { 
+    
+    /* Position the fire element within the circle */
+    top: 50%;
+    left: 50%; 
+    margin-top: -15px; /* Adjusted margin for positioning */
+    position: absolute; /* Position the fire element within the circle */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the fire within the circle */
+    font-size: 24px; 
+    position: absolute; /* Position the fire element within the circle */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%); /* Center the fire within the circle */
+    font-size: 50px; 
+    
+
+    color:white;/* Adjust fire icon size if needed */
+  }
+  
+  
+  
+  /* Optional styles for the current and longest streak value elements */
+  #currentStreakValue {
+    font-size: 90px; /* Adjusted font size for larger circle */
+    text-align: center;
+    line-height: 290px; /* Adjusted line-height for vertical centering */
+  }
+  
+  #longestStreakValue {
+    font-size: 90px; /* Adjusted font size for larger circle */
+    text-align: center;
+    line-height: 290px; /* Adjusted line-height for vertical centering */
+  }
+  
+  .streak-label {
+    font-size: 35px;
+    margin-top: 30px;
+    color: rgb(233, 166, 233);
+    
+  }
+  
+  .partition {
+    width: 4px; /* Thin vertical line */
+    height: 300px; /* Full height for visual alignment */
+    background-color: rgb(158, 209, 158);
+    margin: 0 auto; /* Center line horizontally */
+  }

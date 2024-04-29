@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="loginstyling.css">
+</head>
+<body class="login_body">
+    <div class="container">
+        <div class="leftbox">
+            <header class="login_header">
+                <h2>Welcome to Crafter's Corner!</h2>
+                <h2>Login</h2>
+            </header>
+                
+            <div class="userdetails">
+                   <form action="authenticate.php" method="POST">
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username" required><br>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" required><br><br>
+                    <input type="submit" value="Login" class="login_button">
+                    <p>Don't have an account? <a href="register.html" class="register-link">Register</a></p>
+                </form>
+             </div>
+        </div>
+       
+       <div class="rightbox">
+        <video autoplay muted loop  >
+            <source src="crafter_login_anim.mp4" > </video>
+       
+       </div>
+        
+        
+    </div>
+</body>
+</html>
+
