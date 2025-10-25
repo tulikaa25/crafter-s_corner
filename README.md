@@ -1,6 +1,5 @@
 # Crafter's Corner
-### Welcome to the Crafter's Corner.A blog website that not only informs and entertains but also inspires and empowers users to achieve their personal and professional goals.
----
+
 1.The primary objective is to enhance user engagement and motivation by incorporating a motivational quote feature prominently on the blog website's homepage. This feature will dynamically display inspiring quotes to uplift and energize users, fostering a positive and encouraging environment.
 
   
